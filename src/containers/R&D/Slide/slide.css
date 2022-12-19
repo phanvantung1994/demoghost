@@ -1,0 +1,82 @@
+.swiper {
+  width: 268px;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: left;
+  font-size: 18px;
+  background: black;
+  height: 300px;
+  width: 268px !important;
+
+  /* Center slide text vertically */
+  background: #f1f1f1;
+  border: 1px solid rgba(0, 0, 0, 0.25);
+  box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+  padding: 30px 30px;
+}
+.blockSlide {
+  display: flex;
+  justify-content: space-between;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 60px;
+  display: flex;
+  align-items: flex-start;
+  padding-bottom: 20px;
+}
+.blockSlide a {
+  color: #cfcfd0;
+}
+.blockSlide img {
+  display: block;
+  width: 64px;
+  height: 64px;
+  object-fit: cover;
+}
+.titleSlide {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 27px;
+  color: #000000;
+}
+.content p {
+  padding-top: 20px;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+
+  color: #000000;
+}
+.h {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 42px;
+
+  color: #000000;
+}
+.onClickChangeSlide {
+  position: absolute;
+  bottom: 10px;
+  right: 50px;
+}
+.button {
+  width: 48px;
+  height: 48px;
+  left: 357px;
+  top: 282px;
+  border-radius: 50vh;
+  border: 1px solid #000000;
+  margin: 0 10px;
+  cursor: pointer;
+}
