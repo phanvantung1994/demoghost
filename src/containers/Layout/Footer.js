@@ -8,6 +8,7 @@ import {
   DownloadImages,
   ConverDownload,
   CoverFooterBot,
+  Privacy,
 } from "./Layout.style";
 
 const Footer = () => {
@@ -60,7 +61,9 @@ const Footer = () => {
         </ConverFooter>
         <CoverFooterBot>
           <img src="./LogoIcon.png" width={"56px"} height={"auto"} />
-          <div>License Agreement Privacy Policy Terms and Conditions</div>
+          <Privacy>
+            License Agreement Privacy Policy Terms and Conditions
+          </Privacy>
           <p>Copyright © 2022 Ghost</p>
         </CoverFooterBot>
       </FooterCol>

@@ -10,11 +10,17 @@ const FooterCol = styled(Col)``;
 const ConverFooter = styled.div`
   display: flex;
   justify-content: space-between;
+  @media (max-width: 500px) {
+    flex-direction: column;
+  }
 `;
 const BlockList = styled.ul`
   width: 30%;
   list-style: none;
   justify-content: space-between;
+  @media (max-width: 500px) {
+    width: 100%;
+  }
 `;
 const ListItems = styled.li`
   font-style: normal;
@@ -65,6 +71,9 @@ const DownloadImages = styled.a`
 const ConverDownload = styled.div`
   display: flex;
   justify-content: space-between;
+  @media (max-width: 500px) {
+    flex-direction: column;
+  }
 `;
 const CoverFooterBot = styled.div`
   display: flex;
@@ -82,6 +91,11 @@ const CoverFooterBot = styled.div`
     margin: 0;
   }
 `;
+const Privacy = styled.div`
+  @media (max-width: 800px) {
+    display: none;
+  }
+`;
 export {
   FooterContent,
   FooterCol,
@@ -91,4 +105,5 @@ export {
   DownloadImages,
   ConverDownload,
   CoverFooterBot,
+  Privacy,
 };

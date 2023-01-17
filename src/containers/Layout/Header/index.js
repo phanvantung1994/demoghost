@@ -1,8 +1,17 @@
-import React from "react";
+import React, { useState } from "react";
 import styles from "./styled.module.scss";
 import { Link } from "react-router-dom";
+import "../Slide.css";
 
 const Header = () => {
+  const [isActive, setActive] = useState(null);
+  const ClickMenu = () => {
+    isActive ? setActive(false) : setActive(true);
+  };
+
+  const CloseMenu = () => {
+    setActive(null);
+  };
   return (
     <>
       <div className={styles.container}>
@@ -24,9 +33,9 @@ const Header = () => {
               About <img src="./dropdown.png" />
             </div>
             <div className={styles.dropdownContent}>
-              <a href="#">Link 1</a>
-              <a href="#">Link 2</a>
-              <a href="#">Link 3</a>
+              <a href="#">Company</a>
+              <a href="#">Career</a>
+              <a href="/contact">Contact</a>
             </div>
           </div>
         </div>
@@ -41,8 +50,8 @@ const Header = () => {
             </div>
             <div className={styles.dropdownContent}>
               <Link to="/encryption">Encryption</Link>
-              <a href="#">Link 2</a>
-              <a href="#">Link 3</a>
+              <a href="#">GHOST Mess</a>
+              <a href="#">GHOST OS</a>
             </div>
           </div>
         </div>
@@ -59,6 +68,61 @@ const Header = () => {
           <div className={styles.dropdown}>
             <div className={styles.blockHeader}>Partner</div>
           </div>
+        </div>
+        <div class="nav">
+          <button
+            class={
+              isActive == null || !isActive ? "btn-nav" : "btn-nav animated"
+            }
+            onClick={ClickMenu}
+          >
+            <span class="icon-bar top"></span>
+            <span class="icon-bar middle"></span>
+            <span class="icon-bar bottom"></span>
+          </button>
+        </div>
+        <div
+          class={
+            isActive == null
+              ? "hidden"
+              : !isActive
+              ? "nav-content hideNav"
+              : "showNav nav-content"
+          }
+        >
+          <ul class="nav-list" onClick={() => CloseMenu()}>
+            <li class="nav-item">
+              <Link to="/home">
+                <span class="item-anchor">Home</span>
+              </Link>
+            </li>
+            <li class="nav-item">
+              <Link to="/the-agency">
+                <span class="item-anchor">The Agency</span>
+              </Link>
+            </li>
+            <li class="nav-item">
+              <Link to="/Legal">
+                <span class="item-anchor">Legal</span>
+              </Link>
+            </li>
+            <li class="nav-item">
+              <Link to="/ghost-stack">
+                <span class="item-anchor">GHOST Stack</span>
+              </Link>
+            </li>
+            <li class="nav-item">
+              <Link to="/contact">
+                <span class="item-anchor">Contact</span>
+              </Link>
+            </li>
+            <li class="nav-item">
+              <Link to="/career">
+                <span class="item-anchor">Career</span>
+              </Link>
+            </li>
+          </ul>
+          <div class="line-betwen"></div>
         </div>
       </div>
     </>

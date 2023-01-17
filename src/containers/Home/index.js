@@ -138,27 +138,37 @@ const Home = () => {
               technology for securing their mission-critical communications.
             </p>
           </div>
-          <div className={styles.blockNumber}>
-            <div>
-              <h1>{count < 20 ? count : 20}K</h1>
-              <p>Users around the world</p>
+          <div className={styles.wrapperBlock}>
+            <div className={styles.blockNumber}>
+              <div>
+                <h1>{count < 20 ? count : 20}K</h1>
+                <p>Users around the world</p>
+              </div>
+              <img src="/Line1.png" height={"140px"} />
+              <div>
+                <h1>{count < 60 ? count : 60}+</h1>
+                <p>Dedicated team members</p>
+              </div>
             </div>
-            <img src="/Line1.png" height={"140px"} />
-            <div>
-              <h1>{count < 60 ? count : 60}+</h1>
-              <p>Dedicated team members</p>
-            </div>
-            <img src="/Line1.png" height={"140px"} />
-            <div>
-              <h1 style={{ width: "192px" }}>
-                <span>{count < 180 ? count : 180}</span>+
-              </h1>
-              <p>Countries service coverage</p>
-            </div>
-            <img src="/Line1.png" height={"140px"} />
-            <div>
-              <h1 style={{ width: "220px" }}>{count < 100 ? count : 99}.9%</h1>
-              <p>Uptime</p>
+            <div className={styles.blockNumber}>
+              <img
+                src="/Line1.png"
+                height={"140px"}
+                className={styles.blockChild}
+              />
+              <div>
+                <h1 className={styles.block180}>
+                  <span>{count < 180 ? count : 180}</span>+
+                </h1>
+                <p>Countries service coverage</p>
+              </div>
+              <img src="/Line1.png" height={"140px"} />
+              <div>
+                <h1 className={styles.block99}>
+                  {count < 100 ? count : 99}.9%
+                </h1>
+                <p>Uptime</p>
+              </div>
             </div>
           </div>
         </Col>

@@ -50,23 +50,48 @@
     line-height: 24px;
     color: #000000;
   }
+  @media (max-width: 800px) {
+    width: 100%;
+  }
 }
 .blockRight {
   width: 40%;
   display: flex;
   justify-content: end;
+  @media (max-width: 1200px) {
+    img {
+      width: 400px;
+      height: auto;
+    }
+  }
+  @media (max-width: 800px) {
+    display: none;
+    img {
+      width: 300px;
+    }
+  }
 }
 
 .rowContainerSecond {
   display: flex;
   background: #ffffff;
-  height: 980px;
+  min-height: 980px;
   justify-content: center;
 }
 // Sectiontwo
 .sectiontwo {
   display: flex;
   height: 938px;
+  @media (max-width: 950px) {
+    flex-direction: column;
+    height: 1400px;
+  }
+  @media (max-width: 800px) {
+    height: 1838px;
+  }
+  // @media (max-width: 500px) {
+  //   height: ;
+  // }
 }
 .blockLeftSectiontwo {
   width: 40%;
@@ -99,12 +124,22 @@
       padding-right: 10px;
     }
   }
+  @media (max-width: 1200px) {
+    padding-top: 50px;
+    h4 {
+      font-size: 34px;
+      line-height: 47px;
+    }
+  }
 }
 .blockRightSectiontwo {
   width: 60%;
   display: flex;
   justify-content: flex-end;
   align-items: center;
+  @media (max-width: 800px) {
+    width: 100%;
+  }
 }
 .gridBlockSctiontwo {
   display: grid;
@@ -117,6 +152,26 @@
   height: 800px;
   a {
     width: 315px;
+  }
+  @media (max-width: 1300px) {
+    height: 766px;
+    width: auto;
+    grid-gap: 20px;
+    a {
+      width: 235px;
+    }
+  }
+  @media (max-width: 800px) {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "box1"
+      "box2"
+      "box3"
+      "box4";
+    width: 100%;
+    a {
+      width: auto;
+    }
   }
 }
 .blockGridone {
@@ -149,6 +204,14 @@
       transform: scale(1.2);
     }
   }
+  @media (max-width: 1300px) {
+    margin-top: 184px;
+    height: 210px;
+  }
+  @media (max-width: 900px) {
+    margin-top: 70px;
+    height: 250px;
+  }
 }
 .blockGritwo {
   grid-area: box2;
@@ -179,6 +242,15 @@
       transform: scale(1.2);
     }
   }
+  @media (max-width: 1300px) {
+    height: 320px;
+    a {
+      img {
+        bottom: 0;
+        right: 0;
+      }
+    }
+  }
 }
 .blockGrithree {
   grid-area: box3;
@@ -207,6 +279,12 @@
       transform: scale(1.2);
     }
   }
+  @media (max-width: 1300px) {
+    height: 320px;
+  }
+  @media (max-width: 500px) {
+    margin-bottom: 0px;
+  }
 }
 .titleProtec {
   padding-top: 170px;
@@ -225,6 +303,9 @@
     font-size: 16px;
     line-height: 24px;
     color: #000000;
+  }
+  @media (max-width: 1200px) {
+    padding-top: 65px;
   }
 }
 //SectionThree
@@ -252,12 +333,19 @@
 
     color: #ffffff;
   }
+  @media (max-width: 800px) {
+    height: 951px;
+  }
+  @media (max-width: 500px) {
+    height: 1051px;
+  }
 }
 .blockNumber {
   display: flex;
   width: 100%;
   justify-content: space-around;
   margin-top: 45px;
+  white-space: normal;
   h1 {
     font-style: normal;
     font-weight: 700;
@@ -275,6 +363,19 @@
     text-align: center;
     color: #ffffff;
   }
+  @media (max-width: 1100px) {
+    h1 {
+      font-size: 60px;
+    }
+    p {
+      font-size: 10px;
+    }
+  }
+  @media (max-width: 800px) {
+    h1 {
+      font-size: 47px;
+    }
+  }
 }
 // SectionFour
 .rowContainerFour {
@@ -282,6 +383,9 @@
   background-color: #ffffff;
   justify-content: center;
   align-items: center;
+  @media (max-width: 800px) {
+    height: 1650px;
+  }
 }
 .colContainerFour {
   text-align: center;
@@ -302,6 +406,9 @@
   width: 100%;
   display: flex;
   justify-content: space-between;
+  @media (max-width: 800px) {
+    flex-direction: column;
+  }
 }
 .blockOneInSectionFour {
   background: #1f2633;
@@ -349,6 +456,10 @@
   @media (max-width: 1600px) {
     width: 30%;
   }
+  @media (max-width: 800px) {
+    width: 100%;
+    margin-bottom: 20px;
+  }
 }
 // SectionFive
 .rowContainerFive {
@@ -360,6 +471,11 @@
 .colContainerFive {
   display: flex;
   justify-content: space-between;
+  @media (max-width: 500px) {
+    img {
+      display: none;
+    }
+  }
 }
 .blockLeftFive {
   width: 60%;
@@ -390,7 +506,7 @@
 }
 // SectionSix
 .rowContainerSix {
-  padding-top: 50px;
+  padding-top: 70px;
   height: 1050px;
   background: #1f2633;
   justify-content: center;
@@ -413,20 +529,12 @@
     line-height: 24px;
     color: #ffffff;
   }
+  @media (max-width: 500px) {
+    height: 650px;
+  }
 }
 .colContainerSix {
   text-align: center;
-  // .inLineText {
-  //   margin: 0px 50px;
-  //   font-style: normal;
-  //   font-weight: 700;
-  //   font-size: 36px;
-  //   line-height: 54px;
-  //   color: #39adaa;
-  //   span {
-  //     color: #000000;
-  //   }
-  // }
   a {
     margin: 0px 50px;
     span {
@@ -438,5 +546,28 @@
       /* identical to box height */
       color: #39adaa;
     }
+  }
+}
+.blockChild {
+  @media (max-width: 800px) {
+    display: none;
+  }
+}
+.wrapperBlock {
+  display: flex;
+  @media (max-width: 800px) {
+    flex-direction: column;
+  }
+}
+.block180 {
+  width: 192px;
+  @media (max-width: 500px) {
+    width: 150px;
+  }
+}
+.block99 {
+  width: 220px;
+  @media (max-width: 500px) {
+    width: 170px;
   }
 }
