@@ -97,28 +97,13 @@ const Header = () => {
               </Link>
             </li>
             <li class="nav-item">
-              <Link to="/the-agency">
-                <span class="item-anchor">The Agency</span>
+              <Link to="/a-and-d">
+                <span class="item-anchor">R&D</span>
               </Link>
             </li>
             <li class="nav-item">
-              <Link to="/Legal">
-                <span class="item-anchor">Legal</span>
-              </Link>
-            </li>
-            <li class="nav-item">
-              <Link to="/ghost-stack">
-                <span class="item-anchor">GHOST Stack</span>
-              </Link>
-            </li>
-            <li class="nav-item">
-              <Link to="/contact">
-                <span class="item-anchor">Contact</span>
-              </Link>
-            </li>
-            <li class="nav-item">
-              <Link to="/career">
-                <span class="item-anchor">Career</span>
+              <Link to="/encryption">
+                <span class="item-anchor">ENCRYPTION</span>
               </Link>
             </li>
           </ul>

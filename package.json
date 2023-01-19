@@ -24,7 +24,7 @@
     "sass": "^1.56.1",
     "styled-components": "^5.2.0",
     "styled-system": "^5.1.5",
-    "swiper": "6.8.4",
+    "swiper": "^8.4.6",
     "uuid": "^9.0.0"
   },
   "scripts": {

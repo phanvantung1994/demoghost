@@ -467,10 +467,21 @@
   background-color: #39adaa;
   justify-content: center;
   align-items: center;
+  @media (max-width: 500px) {
+    img {
+      width: 100%;
+    }
+  }
 }
 .colContainerFive {
   display: flex;
   justify-content: space-between;
+  @media (max-width: 800px) {
+    align-items: end;
+    img {
+      height: 200px;
+    }
+  }
   @media (max-width: 500px) {
     img {
       display: none;

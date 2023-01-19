@@ -1,14 +1,34 @@
 .swiper {
-  width: 268px;
+  /* width: 268px; */
   height: 100%;
 }
-
+@media (max-width: 1200px) {
+  .swiper {
+    width: 750px !important;
+  }
+}
+@media (max-width: 870px) {
+  .swiper {
+    width: 550px !important;
+  }
+}
+@media (max-width: 600px) {
+  .swiper {
+    width: 450px !important;
+  }
+}
+@media (max-width: 500px) {
+  .swiper {
+    width: 350px !important;
+  }
+}
 .swiper-slide {
   text-align: left;
   font-size: 18px;
   background: black;
   height: 300px;
-  width: 268px !important;
+  /* width: 268px !important; */
+  width: 100%;
 
   /* Center slide text vertically */
   background: #f1f1f1;
@@ -17,6 +37,16 @@
   border-radius: 10px;
   padding: 30px 30px;
 }
+/* @media (max-width: 1200px) {
+  .swiper-slide {
+    width: 300px !important;
+  }
+}
+@media (max-width: 1100px) {
+  .swiper-slide {
+    width: 500px !important;
+  }
+} */
 .blockSlide {
   display: flex;
   justify-content: space-between;
@@ -69,6 +99,13 @@
   position: absolute;
   bottom: 10px;
   right: 50px;
+  z-index: 9999;
+}
+@media (max-width: 1100px) {
+  .onClickChangeSlide {
+    bottom: -370px;
+    right: auto;
+  }
 }
 .button {
   width: 48px;
@@ -79,4 +116,39 @@
   border: 1px solid #000000;
   margin: 0 10px;
   cursor: pointer;
+}
+/* .mySwiper {
+  width: 100vw;
+} */
+.blockSlideContent {
+  width: 100%;
+  display: flex;
+  position: absolute;
+}
+@media (max-width: 1100px) {
+  .blockSlideContent {
+    flex-direction: column;
+  }
+}
+.blockChildSlide {
+  width: 30%;
+  position: relative;
+}
+@media (max-width: 1100px) {
+  .blockChildSlide {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
+}
+.blockChildSlideBot {
+  width: 70%;
+  position: relative;
+}
+@media (max-width: 1100px) {
+  .blockChildSlideBot {
+    width: 100%;
+    /* margin-left: 200px; */
+  }
 }

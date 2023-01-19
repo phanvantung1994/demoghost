@@ -53,7 +53,7 @@ const RAndD = () => {
         </Col>
       </Row>
       <Row className={styles.rowContainerThree}>
-        <Col span={24}>
+        <Col span={24} className={styles.blockImagesRD}>
           <img src="/imagesec31.png" height={"550px"} width={"auto"} />
         </Col>
         <Col span={24} className={styles.colContainerThree}>
@@ -77,7 +77,7 @@ const RAndD = () => {
       </Row>
       {/* Row For */}
       <Row className={styles.rowContainerFour}>
-        <Col span={24}>
+        <Col span={24} className={styles.blockImagesRD}>
           <img
             src="/imagesec32.png"
             height={"550px"}

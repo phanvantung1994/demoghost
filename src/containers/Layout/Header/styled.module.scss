@@ -13,6 +13,9 @@
 .blockLogo {
   position: absolute;
   left: 45px;
+  @media (max-width: 500px) {
+    left: 15px;
+  }
 }
 .blockItemHeader {
   padding: auto;

@@ -44,7 +44,10 @@ const Footer = () => {
             <ListItems>R&D</ListItems>
             <ListItems>Partner</ListItems>
             <ConverDownload>
-              <DownloadImages>
+              <DownloadImages
+                href="https://install.goghost.org/2022"
+                target="_blank"
+              >
                 <img src="/download.png" width={"50px"} />
                 <p>
                   <span>Google Play</span>

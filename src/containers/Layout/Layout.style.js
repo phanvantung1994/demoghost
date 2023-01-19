@@ -12,6 +12,7 @@ const ConverFooter = styled.div`
   justify-content: space-between;
   @media (max-width: 500px) {
     flex-direction: column;
+    margin-top: 30px;
   }
 `;
 const BlockList = styled.ul`

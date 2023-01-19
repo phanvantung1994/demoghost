@@ -6,12 +6,20 @@
   justify-content: end;
   max-width: 1920px;
   width: 100%;
+  @media (max-width: 1200px) {
+    img {
+      height: 900px;
+    }
+  }
 }
 .blockImage {
   height: 1024px;
   align-items: center;
   display: flex;
   width: 100%;
+  @media (max-width: 1200px) {
+    height: 900px;
+  }
 }
 .blockTitle {
   display: flex;
@@ -60,6 +68,15 @@
     line-height: 24px;
     color: #000000;
   }
+  @media (max-width: 1000px) {
+    width: 100%;
+    a {
+      width: 100%;
+    }
+    p {
+      width: 100%;
+    }
+  }
 }
 .blockRight {
   width: 40%;
@@ -73,6 +90,12 @@
   align-items: center;
   justify-content: center;
   background: linear-gradient(0deg, #ffffff, #ffffff), #161616;
+  @media (max-width: 1000px) {
+    height: 1400px;
+  }
+  @media (max-width: 600px) {
+    height: 1800px;
+  }
 }
 .colContainerTwo {
   display: flex;
@@ -141,6 +164,16 @@
     color: #000000;
     margin-bottom: 0;
   }
+  @media (max-width: 1200px) {
+    width: 215px;
+  }
+  @media (max-width: 1000px) {
+    width: 268px;
+  }
+  @media (max-width: 600px) {
+    width: 381px;
+    height: 250px;
+  }
 }
 .wrapperBlock {
   display: grid;
@@ -151,6 +184,12 @@
   grid-column-gap: 30px;
   -moz-column-gap: 30px;
   column-gap: 30px;
+  @media (max-width: 1000px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  @media (max-width: 600px) {
+    grid-template-columns: repeat(1, 1fr);
+  }
 }
 // SectionThree
 .rowContainerThree {
@@ -168,6 +207,13 @@
   background-size: contain;
   padding-top: 10px;
   margin-top: 50px;
+  @media (max-width: 1050px) {
+    background: none;
+    height: 2150px;
+  }
+  @media (max-width: 600px) {
+    height: 2350px;
+  }
 }
 .contentOne {
   width: 100%;
@@ -225,6 +271,9 @@
       }
     }
   }
+  @media (max-width: 1000px) {
+    height: 835px;
+  }
 }
 .contentTwo {
   width: 410px;
@@ -259,10 +308,14 @@
     line-height: 24px;
     color: #000000;
   }
+  @media (max-width: 1000px) {
+    width: 100%;
+    height: 735px;
+  }
 }
 .contentThree {
   width: 100%;
-  height: 535px;
+  height: 835px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -290,6 +343,9 @@
     font-size: 16px;
     line-height: 24px;
     color: #000000;
+  }
+  @media (max-width: 600px) {
+    height: 635px;
   }
 }
 .contentSectionThree {
@@ -330,6 +386,17 @@
 .colContainerFive {
   display: flex;
   justify-content: space-between;
+  align-items: end;
+  @media (max-width: 1000px) {
+    img {
+      height: 200px;
+    }
+  }
+  @media (max-width: 600px) {
+    img {
+      display: none;
+    }
+  }
 }
 .blockLeftFive {
   width: 60%;
@@ -356,5 +423,12 @@
     display: flex;
     justify-content: center;
     align-items: center;
+  }
+}
+.blockImageData {
+  display: none;
+  margin-top: 150px;
+  @media (max-width: 1050px) {
+    display: block;
   }
 }

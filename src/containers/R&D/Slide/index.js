@@ -2,10 +2,12 @@ import React, { useRef, useState } from "react";
 // Import Swiper React components
 import { Swiper, SwiperSlide, useSwiper } from "swiper/react";
 import { Navigation } from "swiper";
+// import "swiper/swiper-bundle.js";
+import "swiper/swiper-bundle.min.css";
 
 // Import Swiper styles
 import "swiper/swiper.min.css";
-import "swiper/components/pagination";
+// import "swiper/components/pagination";
 
 import "./slide.css";
 // import required modules
@@ -14,8 +16,8 @@ export default function Slide() {
   const swiperRef = useRef();
   return (
     <>
-      <div style={{ width: "100%", display: "flex", position: "absolute" }}>
-        <div style={{ width: "30%", position: "relative" }}>
+      <div className="blockSlideContent">
+        <div className="blockChildSlide">
           <h1 className="h">
             A framework <br />
             designed to <br />
@@ -36,20 +38,20 @@ export default function Slide() {
             </button>
           </div>
         </div>
-        <div style={{ width: "70%", position: "relative" }}>
+        <div className="blockChildSlideBot">
           <Swiper
-            slidesPerView={3}
+            slidesPerView={1}
             spaceBetween={10}
             // centeredSlides={true}
             pagination={{
               clickable: true,
             }}
             breakpoints={{
-              640: {
-                slidesPerView: 2,
+              850: {
+                slidesPerView: 1,
                 spaceBetween: 10,
               },
-              768: {
+              900: {
                 slidesPerView: 2,
                 spaceBetween: 20,
               },
@@ -151,6 +153,12 @@ export default function Slide() {
                 <p>The product enters mass production.</p>
               </div>
             </SwiperSlide>
+            {/* <SwiperSlide></SwiperSlide>
+            <SwiperSlide></SwiperSlide>
+            <SwiperSlide></SwiperSlide>
+            <SwiperSlide></SwiperSlide>
+            <SwiperSlide></SwiperSlide>
+            <SwiperSlide></SwiperSlide> */}
           </Swiper>
         </div>
       </div>

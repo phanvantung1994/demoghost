@@ -115,6 +115,9 @@ const Encryption = () => {
         </div>
         <Col span={20} className={styles.colContainerThree}>
           <div className={styles.contentOne}>
+            <div className={styles.blockImageData}>
+              <img src="./encryption_1.png" />
+            </div>
             <h1>Data encryption</h1>
             <Collapse defaultActiveKey={["1"]} ghost accordion height={"400px"}>
               <Panel header="Key generation" key="1">
@@ -163,7 +166,11 @@ const Encryption = () => {
               </Panel>
             </Collapse>
           </div>
+
           <div className={styles.contentTwo}>
+            <div className={styles.blockImageData}>
+              <img src="./encrytion_2.png" />
+            </div>
             <h1>Data in transit</h1>
             <a>TLS encrypted network</a>
             <p>
@@ -176,6 +183,9 @@ const Encryption = () => {
             </p>
           </div>
           <div className={styles.contentThree}>
+            <div className={styles.blockImageData}>
+              <img src="./encryption_3.png" />
+            </div>
             <h1>Data in rest</h1>
             <a>Secure device storage</a>
             <p>
