@@ -1,0 +1,170 @@
+.SectionTwo {
+  display: flex;
+  justify-content: center;
+  height: 800px;
+}
+
+.Content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.WrapperContact {
+  width: 100%;
+  max-width: 650px;
+}
+.WrapperForm {
+  :global {
+    .ant-col-offset-8 {
+      margin-left: 0;
+    }
+    .ant-input {
+      //   background: rgba(57, 173, 170, 0.3);
+      border: 1px solid #c5c4c4;
+      border-radius: 5px;
+      color: #ffffff;
+      margin-bottom: 0px;
+    }
+    .ant-input:hover {
+      background: rgba(57, 173, 170, 0.3);
+      color: #ffffff;
+      transform: scale(1.02);
+    }
+    .ant-input-status-error:not(.ant-input-disabled):not(.ant-input-borderless).ant-input {
+      background: rgba(57, 173, 170, 0.3);
+      color: #ffffff;
+    }
+    .ant-form-item {
+      margin-bottom: 14px;
+    }
+    .ant-col-16 {
+      max-width: 100%;
+    }
+    .ant-btn-primary {
+      width: 176px;
+      height: 42px;
+      background: linear-gradient(0deg, #39adaa, #39adaa), #39adaa;
+      border-radius: 5px;
+      border: none;
+      &:hover {
+        background: linear-gradient(
+          225deg,
+          rgb(24, 200, 255) 14.89%,
+          rgb(45, 198, 89) 85.85%
+        );
+      }
+    }
+  }
+}
+.WrapperName {
+  display: flex;
+  justify-content: space-between;
+}
+.apply {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 30px;
+}
+.rowContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(180deg, #ffffff 0%, #f1f1f1 100%);
+}
+.container {
+  max-height: 900px;
+  position: absolute;
+  background: linear-gradient(180deg, #ffffff 0%, #f1f1f1 100%);
+  display: flex;
+  justify-content: end;
+  max-width: 1920px;
+  width: 100%;
+  img {
+    max-width: 540px;
+  }
+}
+.blockImage {
+  height: 900px;
+  align-items: center;
+  display: flex;
+  width: 100%;
+}
+.blockLeft {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  h1 {
+    float: left;
+    width: 70%;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 36px;
+    color: #000000;
+  }
+  a {
+    float: left;
+    width: 70%;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 54px;
+    margin-bottom: 20px;
+    color: #000000;
+    span {
+      color: #39adaa;
+    }
+  }
+  p {
+    float: left;
+    width: 70%;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #000000;
+  }
+  @media (max-width: 800px) {
+    width: 100%;
+  }
+}
+.blockRight {
+  width: 40%;
+  display: flex;
+  justify-content: end;
+  @media (max-width: 1200px) {
+    img {
+      width: 400px;
+      height: auto;
+    }
+  }
+  @media (max-width: 800px) {
+    display: none;
+    img {
+      width: 300px;
+    }
+  }
+}
+
+.CarrerContent {
+  h1 {
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 54px;
+    color: #000000;
+  }
+  p {
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16.5px;
+    line-height: 24px;
+
+    color: #000000;
+    margin-bottom: 30px;
+  }
+}

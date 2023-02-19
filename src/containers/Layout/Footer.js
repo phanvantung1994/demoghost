@@ -64,9 +64,7 @@ const Footer = () => {
         </ConverFooter>
         <CoverFooterBot>
           <img src="./LogoIcon.png" width={"56px"} height={"auto"} />
-          <Privacy>
-            License Agreement Privacy Policy Terms and Conditions
-          </Privacy>
+          <Privacy>Privacy Policy Terms and Conditions</Privacy>
           <p>Copyright © 2022 Ghost</p>
         </CoverFooterBot>
       </FooterCol>

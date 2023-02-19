@@ -18,18 +18,30 @@ const Encryption = () => {
             <h1>Encryption done right</h1>
             <div className={styles.blockTitle}>
               <p>
-                Are your communications private? Are they secure? Unless you
-                encrypt them, the answer is no.
+                Are your communications private? Are they
                 <br />
+                secure? Unless you encrypt them, the answer is <br />
+                no. <br />
                 <br />
                 All messages you send over the Internet pass
-                <br /> through various servers before reaching their final
-                <br /> destination. They could be intercepted and read
-                <br /> at any point. For that reason, you need encryption
-                <br /> to guarantee your communication privacy and
-                <br /> security.
+                <br />
+                through various servers before reaching their final
+                <br />
+                destination. They could be intercepted and read
+                <br />
+                at any point. For that reason, you need encryption
+                <br />
+                to guarantee your communication privacy and
+                <br />
+                security.
+                <br />
+                <br />
+                The internet is public by designed, so your
+                <br /> encryption must be handled properly to ensure
+                <br /> all data sent over the internet is properly
+                <br /> encrypted and secured.
               </p>
-              <img src="/LineHeight.png" height={"210px"} />
+              <img src="/LineHeight.png" height={"350px"} width={"3px"} />
             </div>
           </div>
           <div className={styles.blockRight}>
@@ -66,29 +78,30 @@ const Encryption = () => {
             </div>
             <div className={styles.blockKeyOne}>
               <img src="./itemKey2.png" width={"72px"} height={"72px"} />
-              <h1>User-owned keys</h1>
+              <h1>No backdoors</h1>
               <p>
-                All of Secure Group’s encrypted communication solutions work
-                with keys owned by the user. They are generated on the user’s
-                device and stored only there.
+                Secure Group believes that a backdoor for one is a backdoor for
+                all. Unlike some providers, Secure Group does not create
+                intentional flaws in its cryptosystem to bypass encryption.
               </p>
             </div>
             <div className={styles.blockKeyOne}>
               <img src="./itemKey3.png" width={"72px"} height={"72px"} />
-              <h1>User-owned keys</h1>
+              <h1>Open-source</h1>
               <p>
-                All of Secure Group’s encrypted communication solutions work
-                with keys owned by the user. They are generated on the user’s
-                device and stored only there.
+                The open-source protocols used by Secure Group are subject to
+                constant peer review. A large community of experts constantly
+                upgrades the protocols to eliminate any room for flaws.
               </p>
             </div>
             <div className={styles.blockKeyOne}>
               <img src="./itemKey4.png" width={"72px"} height={"72px"} />
-              <h1>User-owned keys</h1>
+              <h1>Zero-access to data</h1>
               <p>
-                All of Secure Group’s encrypted communication solutions work
-                with keys owned by the user. They are generated on the user’s
-                device and stored only there.
+                We encrypt all data on the user’s side with a key that only the
+                user has. Moreover, our decentralized network is designed around
+                the concept of zero-knowledge, and no sensitive data is stored
+                outside the communication devices.
               </p>
             </div>
           </div>
@@ -123,34 +136,45 @@ const Encryption = () => {
               <Panel header="Key generation" key="1">
                 <p>
                   The process of encrypting your communications
-                  <br /> starts even before you send your first message
-                  <br /> with the generation of a cryptographic key or
-                  <br /> key pair. No matter the communication channel
-                  <br /> you've chosen -chat, call, email- encryption
-                  <br /> keys are generated on the device, and private
-                  <br /> keys are never stored outside it.
+                  <br />
+                  starts even before you send your first message
+                  <br />
+                  with the generation of a cryptographic key/key
+                  <br />
+                  pair. No matter the communication channel
+                  <br /> you've chosen, encryption keys are generated
+                  <br />
+                  on the device, and private keys are never stored
+                  <br />
+                  outside it.
                 </p>
               </Panel>
               <Panel header="Message encryption" key="2">
                 <p>
                   When you type in your message and press the
-                  <br /> send button, your message is instantly encrypted
-                  <br /> with the device-generated encryption keys. Our
-                  <br /> products are secured by open-source encryption
-                  <br /> protocols, which have been vetted numerous times
                   <br />
-                  and have never been compromised.
+                  send button, your message is instantly encrypted
+                  <br />
+                  with the device-generated encryption keys. Our
+                  <br />
+                  products are secured by open-source encryption
+                  <br /> protocols, which have been vetted numerous
+                  <br />
+                  times and have never been compromised.
                 </p>
               </Panel>
               <Panel header="Secure key exchange" key="3">
                 <p>
                   Once your message is encrypted and on its way to
-                  <br /> the recipient, a secure key exchange occurs. Our
-                  <br /> products rely on the proven Diffie-Hellman key
-                  <br /> exchange algorithm, a method for securely
-                  <br /> exchanging cryptographic keys over a public
                   <br />
-                  communications channel.
+                  the recipient, a secure key exchange occurs. Our
+                  <br />
+                  products rely on the proven Diffie-Hellman key
+                  <br />
+                  exchange algorithm, a method for securely exchanging
+                  <br />
+                  cryptographic keys over a public communications
+                  <br /> channel.
                 </p>
               </Panel>
               <Panel header="Session verification" key="4">
@@ -158,10 +182,9 @@ const Encryption = () => {
                   This is an additional step available in peer-to-peer
                   <br /> chats and voice calls, designed to detect and
                   <br /> counter man in the middle (MITM) attacks. It
-                  <br /> involves the two communicating parties sharing a<br />{" "}
-                  common secret, thus verifying their identities and
-                  <br />
-                  the security of the communication channel.
+                  <br /> involves the two communicating parties sharing
+                  <br /> a common secret, thus verifying their identities
+                  <br /> and the security of the communication channel.
                 </p>
               </Panel>
             </Collapse>
@@ -174,28 +197,35 @@ const Encryption = () => {
             <h1>Data in transit</h1>
             <a>TLS encrypted network</a>
             <p>
-              Your messages travel through our decentralized
-              <br /> secure communication network in an encrypted
-              <br /> form. The connection between different Encrypted
-              <br /> Communication Nodes (ECNs) is secured using the
-              <br /> TLS 1.2 protocol with certificates issued by Comodo
-              <br /> Ca Ltd.
+              Your messages travel through our secure <br />
+              communication network in an encrypted form.
+              <br />
+              The connection between different Encrypted
+              <br />
+              Communication Nodes (ECNs) is secured using the
+              <br />
+              TLS 1.2 protocol.
             </p>
           </div>
           <div className={styles.contentThree}>
             <div className={styles.blockImageData}>
               <img src="./encryption_3.png" />
             </div>
-            <h1>Data in rest</h1>
-            <a>Secure device storage</a>
+            <h1>Secured hardware</h1>
+            <a>True hardware security</a>
             <p>
               True security calls for encrypting not just your
-              <br /> channels of communication but your device as well.
-              <br /> Encrypting your storage guarantees your data is
-              <br /> secure even if you lose your phone or someone steals
-              <br /> it. This is why we made storage encryption and triple
-              <br /> password protection integral and mandatory
-              <br /> features of all our devices.
+              <br />
+              channels of communication but your device as well.
+              <br />
+              Encrypting your storage guarantees your data is
+              <br />
+              secure even if you lose your phone or someone
+              <br />
+              attempts to maliciously attack it. This is why we
+              <br />
+              made an antivirus firewall and triple password <br></br>protection
+              integral and mandatory features of all our<br></br> devices.
             </p>
           </div>
         </Col>

@@ -13,16 +13,15 @@ const RAndD = () => {
         </Col>
         <Col span={20} className={styles.blockImage}>
           <div className={styles.blockLeft}>
-            <h1>
-              Secure Group R&D <br />
-              services
-            </h1>
-            <p>Get ahead in the world of mobile security</p>
-            <a className={styles.LearMore}>
-              <img src="/ButtonMore.png" width={"58px"} height={"48px"} />
-              Learn more
-            </a>
-            <a className={styles.buttonBook}>Book a consultation</a>
+            <h1>GHOST R&D services</h1>
+            <div className={styles.blockTitle}>
+              <p>
+                Elevate your organization to the most secured
+                <br /> mobile operating system and business
+                <br /> applications suite in the world.
+              </p>
+              <img src="/LineHeight.png" height={"15px"} width={"4px"} />
+            </div>
           </div>
           <div className={styles.blockRight}>
             <img src="/AdLeftLock.png" width={"593px"} height={"639px"} />

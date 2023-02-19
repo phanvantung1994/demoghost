@@ -7,15 +7,12 @@ import { AuthProvider } from "./context/auth/auth.provider";
 import { privateRoutes, publicRoutes } from "./constants/router";
 
 const RouteRender = ({ path, component, exact }) => (
-  console.log(path, component, exact),
-  (
-    <Route
-      key={component}
-      exact={exact}
-      path={path}
-      component={lazy(() => import(`./pages/${component}`))}
-    />
-  )
+  <Route
+    key={component}
+    exact={exact}
+    path={path}
+    component={lazy(() => import(`./pages/${component}`))}
+  />
 );
 
 const PrivateRoute = (route) => {

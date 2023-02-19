@@ -33,9 +33,9 @@ const Header = () => {
               About <img src="./dropdown.png" />
             </div>
             <div className={styles.dropdownContent}>
-              <a href="#">Company</a>
-              <a href="#">Career</a>
-              <a href="/contact">Contact</a>
+              <a href="/about-company">Company</a>
+              <a href="/about-career">Career</a>
+              <a href="/about-contact">Contact</a>
             </div>
           </div>
         </div>
@@ -50,8 +50,8 @@ const Header = () => {
             </div>
             <div className={styles.dropdownContent}>
               <Link to="/encryption">Encryption</Link>
-              <a href="#">GHOST Mess</a>
-              <a href="#">GHOST OS</a>
+              <a href="/ghost-mess">GHOST Mess</a>
+              <a href="/ghost-os">GHOST OS</a>
             </div>
           </div>
         </div>
@@ -66,7 +66,9 @@ const Header = () => {
         <div className={styles.blockItemHeader}>
           {/* Block child */}
           <div className={styles.dropdown}>
-            <div className={styles.blockHeader}>Partner</div>
+            <Link to="/partner">
+              <div className={styles.blockHeader}>Partner</div>
+            </Link>
           </div>
         </div>
         <div class="nav">
