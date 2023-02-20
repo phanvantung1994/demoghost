@@ -99,13 +99,43 @@ const Header = () => {
               </Link>
             </li>
             <li class="nav-item">
+              <Link to="/about-company">
+                <span class="item-anchor">Company</span>
+              </Link>
+            </li>
+            <li class="nav-item">
+              <Link to="/about-career">
+                <span class="item-anchor">Career</span>
+              </Link>
+            </li>
+            <li class="nav-item">
+              <Link to="/about-contact">
+                <span class="item-anchor">Contact</span>
+              </Link>
+            </li>
+            <li class="nav-item">
+              <Link to="/encryption">
+                <span class="item-anchor">Encryption</span>
+              </Link>
+            </li>
+            <li class="nav-item">
+              <Link to="/ghost-mess">
+                <span class="item-anchor">GHOST Messenger</span>
+              </Link>
+            </li>{" "}
+            <li class="nav-item">
+              <Link to="/ghost-os">
+                <span class="item-anchor">GHOST OS</span>
+              </Link>
+            </li>{" "}
+            <li class="nav-item">
               <Link to="/a-and-d">
                 <span class="item-anchor">R&D</span>
               </Link>
             </li>
             <li class="nav-item">
-              <Link to="/encryption">
-                <span class="item-anchor">ENCRYPTION</span>
+              <Link to="/partner">
+                <span class="item-anchor">Partner</span>
               </Link>
             </li>
           </ul>

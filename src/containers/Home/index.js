@@ -39,7 +39,11 @@ const Home = () => {
     <>
       <Row className={styles.rowContainer}>
         <Col span={24} className={styles.container}>
-          <img src="/BgHome.png" />
+          <img
+            src="/GhostHome/Rectangle_Home.png"
+            width={"auto"}
+            height={"100%"}
+          />
         </Col>
         <Col span={20} className={styles.blockImage}>
           <div className={styles.blockLeft}>
@@ -53,7 +57,11 @@ const Home = () => {
             </p>
           </div>
           <div className={styles.blockRight}>
-            <img src="/BgHomeNew.png" width={"548px"} height={"719px"} />
+            <img
+              src="/GhostHome/Group_Home.png"
+              width={"548px"}
+              height={"719px"}
+            />
           </div>
         </Col>
       </Row>

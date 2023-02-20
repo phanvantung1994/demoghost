@@ -1,27 +1,44 @@
-import React from "react";
+import React, { useRef, useState } from "react";
 import styles from "./styled.module.scss";
-import { Row, Col, Form, Input, Button } from "antd";
+import { Row, Col, Input, Button, notification, Spin } from "antd";
+import emailjs from "@emailjs/browser";
 
-const layout = {
-  labelCol: { span: 8 },
-  wrapperCol: { span: 16 },
-};
-const validateMessages = {
-  required: "${label} is required!",
-  types: {
-    email: "${label} is not a valid email!",
-    number: "${label} is not a valid number!",
-  },
-  number: {
-    range: "${label} must be between ${min} and ${max}",
-  },
-};
 const AboutCareer = () => {
-  const onFinish = (values: any) => {
-    console.log(values);
+  const [api, contextHolder] = notification.useNotification();
+  const [loading, setLoading] = useState(false);
+  const openNotificationWithIcon = (type) => {
+    api[type]({
+      message: "Success",
+      description:
+        "Thank you for your feedback, we will contact you as soon as possible.",
+    });
+  };
+  const form = useRef();
+  const sendEmail = (e) => {
+    setLoading(true);
+    e.preventDefault();
+
+    emailjs
+      .sendForm(
+        "service_loniryn",
+        "template_wrsngbu",
+        form.current,
+        "QdAoXTA_Nf8iktmvf"
+      )
+      .then(
+        (result) => {
+          console.log(result);
+          result.status == 200 && openNotificationWithIcon("success");
+          setLoading(false);
+        },
+        (error) => {
+          openNotificationWithIcon("error");
+        }
+      );
   };
   return (
     <>
+      {contextHolder}
       {/* section one */}
       <Row className={styles.rowContainer}>
         <Col span={24} className={styles.container}>
@@ -62,57 +79,59 @@ const AboutCareer = () => {
             </p>
           </div>
           <div className={styles.WrapperContact}>
-            <Form
-              {...layout}
+            <form
+              ref={form}
               name="nest-messages"
               layout="vertical"
-              onFinish={onFinish}
-              validateMessages={validateMessages}
+              onSubmit={sendEmail}
             >
               <div className={styles.WrapperForm}>
                 <div className={styles.WrapperName}>
-                  <Form.Item
-                    label="First Name"
-                    name={["user", "fname"]}
-                    rules={[{ required: true }]}
-                    style={{
-                      display: "inline-block",
-                      width: "calc(50% - 8px)",
-                    }}
-                  >
-                    <Input size="large" placeholder="e.g.John" />
-                  </Form.Item>
-                  <Form.Item
-                    label="Last Name"
-                    name={["user", "lname"]}
-                    rules={[{ required: true }]}
-                    style={{
-                      display: "inline-block",
-                      width: "calc(50% - 8px)",
-                    }}
-                  >
-                    <Input size="large" placeholder="e.g.Doe" />
-                  </Form.Item>
+                  <label style={{ width: "48%" }}>
+                    Fname*
+                    <Input
+                      required={true}
+                      name="fname"
+                      size="large"
+                      placeholder="e.g.John"
+                    />
+                  </label>
+                  <label style={{ width: "48%" }}>
+                    lname*
+                    <Input
+                      name="lname"
+                      required={true}
+                      size="large"
+                      placeholder="e.g.Doe"
+                    />
+                  </label>
                 </div>
-                <Form.Item
-                  label="Email"
-                  name={["user", "email"]}
-                  rules={[{ type: "email", required: true }]}
-                >
-                  <Input size="large" placeholder="name@domain.com" />
-                </Form.Item>
-                <Form.Item label="Message" name={["user", "introduction"]}>
-                  <Input.TextArea rows={3} placeholder="Input message" />
-                </Form.Item>
+                <label>
+                  Email*
+                  <Input
+                    type="email"
+                    name="email"
+                    required={true}
+                    size="large"
+                    placeholder="name@domain.com"
+                  />
+                </label>
+                <label>
+                  Message*
+                  <Input.TextArea
+                    name="introduction"
+                    rows={3}
+                    placeholder="Input message"
+                  />
+                </label>
                 <div className={styles.apply}>
-                  <Form.Item wrapperCol={{ ...layout.wrapperCol, offset: 8 }}>
-                    <Button type="primary" htmlType="submit">
-                      APPLY NOW
-                    </Button>
-                  </Form.Item>
+                  <Button type="primary" htmlType="submit">
+                    APPLY NOW
+                  </Button>
+                  {loading && <Spin style={{ marginTop: "10px" }} />}
                 </div>
               </div>
-            </Form>
+            </form>
           </div>
         </Col>
       </Row>

@@ -57,7 +57,7 @@ const GhostPartnerPage = () => {
             </div>
             <div className={styles.blockMarketChildRight}>
               <img
-                src="/partnerChildRight.png"
+                src="/GhostPartner/image_new_phone.png"
                 width={"auto"}
                 height={"463px"}
               />
@@ -71,7 +71,7 @@ const GhostPartnerPage = () => {
           <Col span={20} className={styles.colContainerThreeChild}>
             <div className={styles.blockMarketChildRightChild}>
               <img
-                src="/GhostOs/imagesss2.png"
+                src="/GhostPartner/image_new_phone1.png"
                 width={"auto"}
                 height={"463px"}
               />

@@ -24,7 +24,7 @@ const RAndD = () => {
             </div>
           </div>
           <div className={styles.blockRight}>
-            <img src="/AdLeftLock.png" width={"593px"} height={"639px"} />
+            <img src="/GhostAD/Image_Ad.png" width={"593px"} height={"639px"} />
           </div>
         </Col>
       </Row>
@@ -53,7 +53,11 @@ const RAndD = () => {
       </Row>
       <Row className={styles.rowContainerThree}>
         <Col span={24} className={styles.blockImagesRD}>
-          <img src="/imagesec31.png" height={"550px"} width={"auto"} />
+          <img
+            src="/GhostAD/image_sec_Ad.png"
+            height={"550px"}
+            width={"auto"}
+          />
         </Col>
         <Col span={24} className={styles.colContainerThree}>
           <Col span={20} className={styles.wrapperContentThree}>
@@ -78,7 +82,7 @@ const RAndD = () => {
       <Row className={styles.rowContainerFour}>
         <Col span={24} className={styles.blockImagesRD}>
           <img
-            src="/imagesec32.png"
+            src="/GhostAD/image_sec2_ad.png"
             height={"550px"}
             width={"auto"}
             position={"absolute"}

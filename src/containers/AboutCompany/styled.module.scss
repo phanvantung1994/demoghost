@@ -13,7 +13,8 @@
 }
 .SectionOne {
   height: 750px;
-  background-color: #39adaa;
+  background: url("/GhostHome/Cover_about_company.png") no-repeat center center;
+  background-size: cover;
 }
 .SectionTwo {
   display: flex;

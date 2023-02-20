@@ -7,27 +7,27 @@ const SlideDemo = () => {
   let cards = [
     {
       key: "Bank",
-      content: <Card imagen="/Tab_Banking.png" />,
+      content: <Card imagen="/GhostHome/Tab_Banking_new.png" />,
     },
     {
       key: "Consulting",
-      content: <Card imagen="/Tab_Banking.png" />,
+      content: <Card imagen="/GhostHome/Tab_Consulting.png" />,
     },
     {
       key: "Energy",
-      content: <Card imagen="/Tab_Banking.png" />,
+      content: <Card imagen="/GhostHome/Tab_Energy.png" />,
     },
     {
       key: "Legal",
-      content: <Card imagen="/Tab_Banking.png" />,
+      content: <Card imagen="/GhostHome/Tab_Legal.png" />,
     },
     {
       key: "Pharmaceuticals",
-      content: <Card imagen="/Tab_Banking.png" />,
+      content: <Card imagen="/GhostHome/Tab_Pharmace.png" />,
     },
     {
       key: "Security",
-      content: <Card imagen="/Tab_Banking.png" />,
+      content: <Card imagen="/GhostHome/Tab_Security.png" />,
     },
   ];
   return (
