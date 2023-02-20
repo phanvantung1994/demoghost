@@ -179,6 +179,9 @@
       width: auto;
     }
   }
+  @media (max-width: 500px) {
+    // width: 360px;
+  }
 }
 .blockGridone {
   grid-area: box1;

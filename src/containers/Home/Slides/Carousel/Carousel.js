@@ -50,7 +50,6 @@ function Example({ slides: sourceSlides = [] }) {
   useEffect(() => {
     setCurrentSlide(state.goToSlide);
   }, [state.goToSlide]);
-  console.log(state.goToSlide, "check state.goToSlide");
 
   // ===============================================>>>>>>>
   // Handle touch Mouse

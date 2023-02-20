@@ -94,7 +94,7 @@
     height: 1400px;
   }
   @media (max-width: 600px) {
-    height: 1800px;
+    height: 2000px;
   }
 }
 .colContainerTwo {
@@ -122,6 +122,14 @@
     line-height: 24px;
     color: #000000;
     margin: 20px 0px 60px 0px;
+  }
+  @media (max-width: 500px) {
+    h1 {
+      text-align: left;
+    }
+    p {
+      text-align: left;
+    }
   }
 }
 .blockKeyOne {
@@ -171,8 +179,9 @@
     width: 268px;
   }
   @media (max-width: 600px) {
-    width: 381px;
-    height: 250px;
+    width: 350px;
+    height: 290px;
+    margin: 0px 10px;
   }
 }
 .wrapperBlock {
@@ -372,6 +381,16 @@
     font-size: 16px;
     line-height: 24px;
     color: #000000;
+  }
+  @media (max-width: 500px) {
+    h1 {
+      padding: 0px 30px;
+      text-align: left;
+    }
+    p {
+      padding: 30px;
+      text-align: left;
+    }
   }
 }
 // SectionFor
