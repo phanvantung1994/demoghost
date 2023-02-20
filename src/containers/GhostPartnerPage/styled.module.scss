@@ -93,6 +93,18 @@
     position: relative;
     margin-top: 7px;
   }
+  @media (max-width: 500px) {
+    img {
+      display: none;
+    }
+    hr {
+      margin-top: 8px;
+      width: 3px;
+      height: 40px;
+      background: #161616;
+      border: none;
+    }
+  }
 }
 .LearMore {
   height: 58px;

@@ -21,6 +21,7 @@ const RAndD = () => {
                 <br /> applications suite in the world.
               </p>
               <img src="/LineHeight.png" height={"15px"} width={"4px"} />
+              <hr />
             </div>
           </div>
           <div className={styles.blockRight}>

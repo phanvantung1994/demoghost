@@ -18,7 +18,7 @@
   display: flex;
   width: 100%;
   @media (max-width: 1200px) {
-    height: 900px;
+    height: 1070px;
   }
 }
 .blockTitle {
@@ -27,6 +27,17 @@
   justify-content: flex-end;
   p {
     padding-left: 20px;
+  }
+  @media (max-width: 500px) {
+    img {
+      display: none;
+    }
+    hr {
+      width: 3px;
+      height: 200px;
+      background: #161616;
+      border: none;
+    }
   }
 }
 .rowContainer {

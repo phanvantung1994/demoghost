@@ -48,10 +48,10 @@ const Footer = () => {
                 href="https://install.goghost.org/2022"
                 target="_blank"
               >
-                <img src="/GhostHome/LogoAppStore.png" width={"100%"} />
+                <img src="/GhostHome/LogoGoogleCh.png" width={"100%"} />
               </DownloadImages>
               <DownloadImages>
-                <img src="/GhostHome/LogoGoogleCH.png" width={"100%"} />
+                <img src="/GhostHome/LogoAppStore.png" width={"100%"} />
               </DownloadImages>
             </ConverDownload>
           </BlockList>

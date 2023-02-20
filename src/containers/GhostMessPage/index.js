@@ -30,6 +30,7 @@ const GhostMessPage = () => {
                 end-to-end encrypted communications and secure file storage.
               </p>
               <img src="/LineHeight.png" height={"160px"} />
+              <hr />
             </div>
           </div>
         </Col>

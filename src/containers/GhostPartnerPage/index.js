@@ -22,6 +22,7 @@ const GhostPartnerPage = () => {
                   <br /> security solution in the world.
                 </p>
                 <img src="/LineHeight.png" height={"20px"} width={"5px"} />
+                <hr />
               </div>
               <a className={styles.buttonBook}>Become a partner</a>
             </div>

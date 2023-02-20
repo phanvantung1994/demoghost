@@ -53,6 +53,12 @@ const DownloadImages = styled.a`
   img {
     width: 100%;
   }
+  cursor: pointer;
+  transition: all 0.7s ease;
+  &:hover {
+    cursor: pointer;
+    transform: scale(1.08);
+  }
 `;
 const ConverDownload = styled.div`
   display: flex;

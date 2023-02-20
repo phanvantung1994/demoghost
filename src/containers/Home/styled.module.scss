@@ -137,6 +137,9 @@
       line-height: 47px;
     }
   }
+  @media (max-width: 500px) {
+    width: 300px;
+  }
 }
 .blockRightSectiontwo {
   width: 60%;

@@ -65,6 +65,17 @@
   img {
     margin-top: 6px;
   }
+  @media (max-width: 500px) {
+    img {
+      display: none;
+    }
+    hr {
+      width: 3px;
+      height: 120px;
+      background: #1f2633;
+      border: none;
+    }
+  }
 }
 .blockRight {
   width: 40%;

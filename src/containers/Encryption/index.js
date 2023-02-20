@@ -2,6 +2,7 @@ import React from "react";
 import { Row, Col } from "antd";
 import styles from "./styled.module.scss";
 import { Collapse } from "antd";
+import { height } from "styled-system";
 
 const { Panel } = Collapse;
 
@@ -42,6 +43,7 @@ const Encryption = () => {
                 <br /> encrypted and secured.
               </p>
               <img src="/LineHeight.png" height={"350px"} width={"3px"} />
+              <hr />
             </div>
           </div>
           <div className={styles.blockRight}>
