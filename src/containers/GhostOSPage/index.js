@@ -1,10 +1,15 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Row, Col } from "antd";
 import styles from "./styled.module.scss";
+import ReactGA from "react-ga";
 import AOS from "aos";
 import "aos/dist/aos.css";
 AOS.init();
+
 const GhostOSPage = () => {
+  useEffect(() => {
+    ReactGA.pageview(window.location.pathname);
+  }, []);
   return (
     <>
       <Row className={styles.rowContainer}>

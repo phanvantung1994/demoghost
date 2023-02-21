@@ -1,9 +1,13 @@
-import React from "react";
+import React, { useEffect } from "react";
 import styles from "./styled.module.scss";
 import { Row, Col, Collapse } from "antd";
+import ReactGA from "react-ga";
 
 const { Panel } = Collapse;
 const GhostMessPage = () => {
+  useEffect(() => {
+    ReactGA.pageview(window.location.pathname);
+  }, []);
   return (
     <>
       <Row className={styles.rowContainer}>

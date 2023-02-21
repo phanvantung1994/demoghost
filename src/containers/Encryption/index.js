@@ -1,12 +1,15 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Row, Col } from "antd";
 import styles from "./styled.module.scss";
 import { Collapse } from "antd";
-import { height } from "styled-system";
+import ReactGA from "react-ga";
 
 const { Panel } = Collapse;
 
 const Encryption = () => {
+  useEffect(() => {
+    ReactGA.pageview(window.location.pathname);
+  }, []);
   return (
     <>
       {" "}

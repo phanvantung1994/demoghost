@@ -1,8 +1,13 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Row, Col } from "antd";
 import styles from "./styled.module.scss";
+import ReactGA from "react-ga";
 
 const GhostPartnerPage = () => {
+  useEffect(() => {
+    ReactGA.pageview(window.location.pathname);
+  }, []);
+
   return (
     <>
       <Row className={styles.rowContainer}>

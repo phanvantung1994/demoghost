@@ -1,11 +1,16 @@
-import React, { useRef, useState } from "react";
+import React, { useRef, useState, useEffect } from "react";
 import styles from "./styled.module.scss";
 import { Row, Col, Input, Button, notification, Spin } from "antd";
 import emailjs from "@emailjs/browser";
+import ReactGA from "react-ga";
 
 const AboutContact = () => {
   const [api, contextHolder] = notification.useNotification();
   const [loading, setLoading] = useState(false);
+  useEffect(() => {
+    ReactGA.pageview(window.location.pathname);
+  }, []);
+
   const openNotificationWithIcon = (type) => {
     api[type]({
       message: "Success",

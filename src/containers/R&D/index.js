@@ -1,10 +1,14 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Col, Row } from "antd";
 import styles from "./styled.module.scss";
 import Slide from "./Slide";
-import { RightCircleOutlined } from "@ant-design/icons";
+import ReactGA from "react-ga";
 
 const RAndD = () => {
+  useEffect(() => {
+    ReactGA.pageview(window.location.pathname);
+  }, []);
+
   return (
     <>
       <Row className={styles.rowContainer}>
