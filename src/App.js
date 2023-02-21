@@ -5,7 +5,9 @@ import Layout from "./containers/Layout/Layout";
 import { AuthContext } from "./context/auth/auth.context";
 import { AuthProvider } from "./context/auth/auth.provider";
 import { privateRoutes, publicRoutes } from "./constants/router";
+import ReactGA from "react-ga";
 
+ReactGA.initialize("G-TGW57RFX6F");
 const RouteRender = ({ path, component, exact }) => (
   <Route
     key={component}
