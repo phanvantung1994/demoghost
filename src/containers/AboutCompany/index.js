@@ -1,11 +1,11 @@
 import React, { useEffect } from "react";
 import styles from "./styled.module.scss";
 import { Row, Col } from "antd";
-import ReactGA from "react-ga";
+import ReactGA from "react-ga4";
 
 const AboutCompany = () => {
   useEffect(() => {
-    ReactGA.pageview(window.location.pathname);
+    ReactGA.send("pageview");
   }, []);
   return (
     <>

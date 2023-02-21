@@ -1,11 +1,11 @@
 import React, { useEffect } from "react";
 import { Row, Col } from "antd";
 import styles from "./styled.module.scss";
-import ReactGA from "react-ga";
+import ReactGA from "react-ga4";
 
 const GhostPartnerPage = () => {
   useEffect(() => {
-    ReactGA.pageview(window.location.pathname);
+    ReactGA.send("pageview");
   }, []);
 
   return (

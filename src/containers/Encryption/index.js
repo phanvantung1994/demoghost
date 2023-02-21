@@ -2,13 +2,13 @@ import React, { useEffect } from "react";
 import { Row, Col } from "antd";
 import styles from "./styled.module.scss";
 import { Collapse } from "antd";
-import ReactGA from "react-ga";
+import ReactGA from "react-ga4";
 
 const { Panel } = Collapse;
 
 const Encryption = () => {
   useEffect(() => {
-    ReactGA.pageview(window.location.pathname);
+    ReactGA.send("pageview");
   }, []);
   return (
     <>

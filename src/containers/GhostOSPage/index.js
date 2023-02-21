@@ -1,14 +1,14 @@
 import React, { useEffect } from "react";
 import { Row, Col } from "antd";
 import styles from "./styled.module.scss";
-import ReactGA from "react-ga";
+import ReactGA from "react-ga4";
 import AOS from "aos";
 import "aos/dist/aos.css";
 AOS.init();
 
 const GhostOSPage = () => {
   useEffect(() => {
-    ReactGA.pageview(window.location.pathname);
+    ReactGA.send("pageview");
   }, []);
   return (
     <>

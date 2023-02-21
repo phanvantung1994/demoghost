@@ -2,11 +2,11 @@ import React, { useEffect } from "react";
 import { Col, Row } from "antd";
 import styles from "./styled.module.scss";
 import Slide from "./Slide";
-import ReactGA from "react-ga";
+import ReactGA from "react-ga4";
 
 const RAndD = () => {
   useEffect(() => {
-    ReactGA.pageview(window.location.pathname);
+    ReactGA.send("pageview");
   }, []);
 
   return (

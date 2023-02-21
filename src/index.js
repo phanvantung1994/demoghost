@@ -19,7 +19,7 @@ import { theme } from "./theme/theme";
 import "antd/dist/antd.css";
 import GlobalStyle from "./theme/globalStyle";
 import Header from "./containers/Layout/Header";
-import ReactGA from "react-ga";
+import ReactGA from "react-ga4";
 
 ReactGA.initialize("G-TGW57RFX6F");
 

@@ -3,13 +3,13 @@ import React, { useEffect, useState } from "react";
 import styles from "./styled.module.scss";
 import LazyLoad from "react-lazyload";
 import SlideDemo from "./Slides/index";
-import ReactGA from "react-ga";
+import ReactGA from "react-ga4";
 
 const Home = () => {
   // Handle scroll run number
   const [count, setCount] = useState(0);
   useEffect(() => {
-    ReactGA.pageview(window.location.pathname);
+    ReactGA.send("pageview");
   }, []);
   useEffect(() => {
     if (offsetTop && count < 180) {
