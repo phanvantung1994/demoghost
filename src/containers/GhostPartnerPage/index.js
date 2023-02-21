@@ -27,7 +27,11 @@ const GhostPartnerPage = () => {
               <a className={styles.buttonBook}>Become a partner</a>
             </div>
           </Col>
-          <img src="/partnerPage.png" width={"auto"} height={"463px"} />
+          <img
+            src="/GhostPartner/ImageSec.png"
+            width={"auto"}
+            height={"463px"}
+          />
         </Col>
       </Row>
       {/* Section Two */}

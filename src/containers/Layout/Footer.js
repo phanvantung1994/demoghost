@@ -50,7 +50,10 @@ const Footer = () => {
               >
                 <img src="/GhostHome/LogoGoogleCh.png" width={"100%"} />
               </DownloadImages>
-              <DownloadImages>
+              <DownloadImages
+                href="https://apps.apple.com/gb/app/ghost-messenger-ios/id6444491082?uo=2"
+                target="_blank"
+              >
                 <img src="/GhostHome/LogoAppStore.png" width={"100%"} />
               </DownloadImages>
             </ConverDownload>
