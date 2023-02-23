@@ -21,7 +21,7 @@ import GlobalStyle from "./theme/globalStyle";
 import Header from "./containers/Layout/Header";
 import ReactGA from "react-ga4";
 
-ReactGA.initialize("UA-194270160-1");
+ReactGA.initialize("G-49FH995545");
 
 const httpLink = createHttpLink({
   // eslint-disable-next-line no-undef
