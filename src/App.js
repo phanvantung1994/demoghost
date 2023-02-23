@@ -7,7 +7,7 @@ import { AuthProvider } from "./context/auth/auth.provider";
 import { privateRoutes, publicRoutes } from "./constants/router";
 import ReactGA from "react-ga4";
 
-ReactGA.initialize("UA-194270160-1");
+ReactGA.initialize("UA-194270160-2");
 const RouteRender = ({ path, component, exact }) => (
   <Route
     key={component}
