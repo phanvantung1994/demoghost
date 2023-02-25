@@ -10,6 +10,7 @@ const Encryption = () => {
   useEffect(() => {
     ReactGA.send("pageview");
   }, []);
+
   return (
     <>
       {" "}
@@ -76,27 +77,27 @@ const Encryption = () => {
               <img src="./itemKey1.png" width={"72px"} height={"72px"} />
               <h1>User-owned keys</h1>
               <p>
-                All of Secure Group’s encrypted communication solutions work
-                with keys owned by the user. They are generated on the user’s
-                device and stored only there.
+                All of GHOST’s encrypted communication solutions work with keys
+                owned by the user. They are generated on the user’s device and
+                stored only there.
               </p>
             </div>
             <div className={styles.blockKeyOne}>
               <img src="./itemKey2.png" width={"72px"} height={"72px"} />
               <h1>No backdoors</h1>
               <p>
-                Secure Group believes that a backdoor for one is a backdoor for
-                all. Unlike some providers, Secure Group does not create
-                intentional flaws in its cryptosystem to bypass encryption.
+                GHOST believes that a backdoor for one is a backdoor for all.
+                Unlike some providers, GHOST does not create intentional flaws
+                in its cryptosystem to bypass encryption.
               </p>
             </div>
             <div className={styles.blockKeyOne}>
               <img src="./itemKey3.png" width={"72px"} height={"72px"} />
               <h1>Open-source</h1>
               <p>
-                The open-source protocols used by Secure Group are subject to
-                constant peer review. A large community of experts constantly
-                upgrades the protocols to eliminate any room for flaws.
+                The open-source protocols used by GHOST are subject to constant
+                peer review. A large community of experts constantly upgrades
+                the protocols to eliminate any room for flaws.
               </p>
             </div>
             <div className={styles.blockKeyOne}>
@@ -104,9 +105,9 @@ const Encryption = () => {
               <h1>Zero-access to data</h1>
               <p>
                 We encrypt all data on the user’s side with a key that only the
-                user has. Moreover, our decentralized network is designed around
-                the concept of zero-knowledge, and no sensitive data is stored
-                outside the communication devices.
+                user has. Moreover, our network is designed around the concept
+                of anonymous encryption, and no sensitive data is stored outside
+                the communication devices.
               </p>
             </div>
           </div>

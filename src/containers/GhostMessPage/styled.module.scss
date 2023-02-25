@@ -685,8 +685,12 @@
 .rowContainerThree {
   display: flex;
   justify-content: center;
-  background: #eeeeee;
   background: url("/GhostMess/Rectangle_5.png") no-repeat right center fixed;
+  position: relative;
+  @media (max-width: 500px) {
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+      url("/GhostMess/Rectangle_5.png") no-repeat right center fixed;
+  }
 }
 .colContainerThree {
   height: 1024px;
@@ -762,6 +766,15 @@
     height: 835px;
     padding-top: 0px;
     margin-bottom: 100px;
+    h1 {
+      color: #f1f1f1;
+    }
+    p {
+      color: #f1f1f1;
+    }
+    span {
+      color: #f1f1f1;
+    }
   }
 }
 .contentTwo {
